@@ -20,15 +20,6 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        // Проверка, если трек закончился
-        if (!_audioSource.isPlaying && _audioSource.time == 0)
-        {
-            NextTrack();
-        }
-    }
-
     public void PlayPause()
     {
         if (_audioSource.isPlaying)
